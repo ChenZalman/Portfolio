@@ -20,17 +20,27 @@ function App() {
   }
 
   return (
-    <div style={{display: 'flex', height: '100vh', width: '100vw',textAlign: 'center', boxSizing: 'border-box' , border:'solid 0px green'}}>
-      <div style={{width : '50%'}}>
-        <Header props={{name: 'Chen Zalman', title: 'Android & Full-Stack Developer'}}/>
-        <FaLinkedin style={{cursor:'pointer', margin:'10px'}} size={40} onClick={() => openLink(process.env.REACT_APP_LINKEDINURL)}/>
-        <FaGithub style={{cursor:'pointer', margin:'10px'}} size={40} onClick={() => openLink(process.env.REACT_APP_GITHUBURL)}/>
+    <div style={{display: 'flex', height: '100vh', width: '100vw',textAlign: 'center', border:'solid 1px', boxSizing: 'border-box'}}>
+      {/* Left side of page */}
+      <div style={{padding:'20px',width : '50%', border:'solid 0px', boxSizing: 'border-box'}}>
+        <div style={{height:'25%', border:'solid 0px', boxSizing: 'border-box'}}>
+          <Header props={{name: 'Chen Zalman', title: 'Android & Full-Stack Developer'}}/>
+          <div style={{border:'solid 0px', boxSizing: 'border-box'}}>
+            <FaLinkedin style={{cursor:'pointer', marginInline:'10px'}} size={40} onClick={() => openLink(process.env.REACT_APP_LINKEDINURL)}/>
+            <FaGithub style={{cursor:'pointer', marginInline:'10px'}} size={40} onClick={() => openLink(process.env.REACT_APP_GITHUBURL)}/>
+          </div>
+        </div>
+        <div style={{textAlign:'left', height:'75%'}}>
+          <h1 style={{}}> Projects:</h1>
+        </div>
       </div>
-      <div style={{padding:'20px', flexDirection : 'column', justifyItems: 'center', width: '50%', border: ' solid 0px red'}}>
-        <div style={{ height:'20%', border: ' solid 0px '}}>
+      {/* Right side of page */}
+      <div style={{padding:'20px', flexDirection : 'column', justifyItems: 'center', width: '50%'}}>
+        <div style={{ height:'25%'}}>
           <Summary props={{text: summary}} />
         </div>
-        <div style={{textAlign:'left', overflowY: 'scroll', height:'80%', border: ' solid 0px blue' }}>
+        <div style={{textAlign:'left', overflowY: 'scroll', height:'75%'}}>
+          <h1>Experience:</h1>
           {
             experiences.map(
               (item,i) =>(
