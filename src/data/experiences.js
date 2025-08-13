@@ -23,6 +23,8 @@ const dataExperiences = [
                   • Quickly identified and resolved issues to ensure long-term, reliable solutions.
                   • Communicated effectively with the team and conducted weekly performance evaluations.`
   },
+
+
 ];
 
 export default dataExperiences;
