@@ -80,12 +80,12 @@ hr {
 
   .top-left {
   padding: 20px;
-  width: 100%;
+  width: calc(100% - 20px);
 }
 
 .top-right {
   padding: 20px;
-  width: 100%;
+  width: calc(100% - 20px);
   overflow-y: scroll;
 }
 
@@ -96,7 +96,7 @@ hr {
 
   .bottom-left {
   text-align: left;
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 20px;
 }
 
@@ -104,10 +104,10 @@ hr {
   text-align: left;
   height: 100%;
   /* overflow-y: scroll; */
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 20px;
   flex-grow: 1;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 }
