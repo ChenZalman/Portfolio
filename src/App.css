@@ -4,63 +4,55 @@
   height: 100vh;
   width: 100vw;
   text-align: center;
+  /* border: #c1c1c1 5px solid; */
 }
-
-/* .left-side {
-  padding: 20px;
-  width: 50%;
-}
-
-.right-side {
-  padding: 20px;
-  width: 50%;
-} */
 
 .top {
   display: flex;
-  /* flex-wrap: wrap; */
-  height: calc(35% - 20px);
+  height: calc(35% - 40px);
+  /* width: calc(100% - 40px); */
 }
 
 .bottom {
   display: flex;
-  height: calc(65% - 20px);
-  /* flex-wrap: wrap; */
+  height: calc(65% - 40px);
+  /* width: calc(100% - 40px); */
 }
 
 .top-right {
   padding: 20px;
-  width: 45%;
-  height: 100%;
+  width: calc(50% - 40px);
+  height: calc(100% - 40px);
   overflow-y: scroll;
 }
 
 .bottom-right {
   text-align: left;
   overflow-y: scroll;
-  width: 45%;
-  height: 100%;
+  width: calc(50% - 40px - 16px);
+  height: calc(100%);
   padding: 20px;
 }
 
 .top-left {
   padding: 20px;
-  width: 45%;
+  height: calc(50% - 40px);
+  width: calc(50% - 40px);
 }
-
-/* .links {} */
 
 .bottom-left {
   text-align: left;
-  /* height: 80%; */
-  width: 45%;
-  padding: 20px;
+  height: calc(100% - 80px);
+  width: calc(50% - 40px - 16px);
+  padding: 0px 20px;
 }
 
 .projects {
   display: flex;
   overflow-X: scroll;
-  /* height: 95%; */
+  height: 100%;
+  border: #c1c1c1 1px solid;
+  /* padding: 20px; */
 }
 
 hr {
@@ -68,10 +60,10 @@ hr {
 }
 
 @media(max-width:1024px) {
-  .main-screen{
+  .main-screen {
     text-align: center;
     min-height: 2000px;
-   /*  overflow-y: auto; */
+    /*  overflow-y: auto; */
   }
 
   .top {
@@ -79,15 +71,15 @@ hr {
   }
 
   .top-left {
-  padding: 20px;
-  width: calc(100% - 20px);
-}
+    padding: 20px;
+    width: calc(100% - 20px);
+  }
 
-.top-right {
-  padding: 20px;
-  width: calc(100% - 20px);
-  overflow-y: scroll;
-}
+  .top-right {
+    padding: 20px;
+    width: calc(100% - 20px);
+    overflow-y: scroll;
+  }
 
   .bottom {
     flex-direction: column;
@@ -95,19 +87,19 @@ hr {
   }
 
   .bottom-left {
-  text-align: left;
-  width: calc(100% - 20px);
-  padding: 20px;
-}
+    text-align: left;
+    width: calc(100% - 20px);
+    padding: 20px;
+  }
 
-.bottom-right {
-  text-align: left;
-  height: 100%;
-  /* overflow-y: scroll; */
-  width: calc(100% - 20px);
-  padding: 20px;
-  flex-grow: 1;
-  /* outline: 1px solid red; */
-}
+  .bottom-right {
+    text-align: left;
+    height: 100%;
+    /* overflow-y: scroll; */
+    width: calc(100% - 20px);
+    padding: 20px;
+    flex-grow: 1;
+    /* outline: 1px solid red; */
+  }
 
 }

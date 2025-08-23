@@ -38,7 +38,7 @@ function App() {
       {/* Bottom of page */}
       <div className='bottom'>
         <div className='bottom-left'>
-          <h1 style={{ margin: '0px' }}> Projects:</h1>
+          <h1> Projects:</h1>
           <div className='projects'>
             {
               projects.map(
